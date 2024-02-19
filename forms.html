@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="select" multiple>
+        <option value="blues" selected>Blues</option>
+        <option value="rock" selected>Rock</option>
+        <option value="classic">Classic</option>
+    </select>
+    <script>
+        let selected=Array.from(select.options)
+        .filter(option=>option.selected)
+        .map(option=>option.value);
+        alert(selected);
+    </script>
+    
+</body>
+</html>
